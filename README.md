@@ -1,2 +1,2 @@
 # itemServices
-An API to to save items on the database 
+An API to to save products and commodities under different categories on the database 
