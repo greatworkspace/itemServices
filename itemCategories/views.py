@@ -1,4 +1,4 @@
-from django.shortcuts import render
+#from django.shortcuts import render
 from .serializers import ProductSerializer
 from rest_framework import status
 from rest_framework.response import Response
@@ -6,9 +6,11 @@ from .models import Product
 from rest_framework.views import APIView
 
 # Create your views here.
+# Using class based views
 
 class ProductListApiView(APIView):
 	def post(self, request, *args, **kwargs):
+
 	#Create an item with the list and their categories
 	
 		data = {
