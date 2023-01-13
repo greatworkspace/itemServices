@@ -24,9 +24,9 @@ class ProductListApiView(APIView):
 
 		if serializer.is_valid():
 			serializer.save()
-			return Reponse(serializer.data, status=status.HTTP_201_created)
+			return Response(serializer.data, status=status.HTTP_201_created)
 
-		return Reponse(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+		return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 
