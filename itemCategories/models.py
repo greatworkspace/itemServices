@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Product(models.Model):
+class Products(models.Model):
 	category = models.CharField(max_length = 250)
 	group = models.CharField(max_length = 250)
 	sub_group = models.CharField(max_length = 250)
